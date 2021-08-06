@@ -3,7 +3,8 @@
 //const testURL = "http://localhost:2010";
 //const baseURL = "https://cma-edge-banking.ml";
 //const baseURL = "http://edge-open-banking-api-ibm-cloud-edge-satellite.classic-cluster-satellite-6fb0b86391cd68c8282858623a1dddff-0000.upi.containers.appdomain.cloud"
-const baseURL = "http://edge-open-banking-api-ibm-cloud-edge-banking-app.appdev-cloudnativ-915719-6fb0b86391cd68c8282858623a1dddff-0000.eu-gb.containers.appdomain.cloud"
+//const baseURL = "http://edge-open-banking-api-ibm-cloud-edge-banking-app.appdev-cloudnativ-915719-6fb0b86391cd68c8282858623a1dddff-0000.eu-gb.containers.appdomain.cloud"
+const baseURL = "http://edge-open-api-fs-cloud-app-test-open-banking.mgmt-pot01-cluster-1fa025a294811d2b43b68d6ffd4c8b58-i000.us-east.containers.appdomain.cloud"
 //const baseURL = "http://158.176.180.100:5000";
 
 const apiConstant = {
