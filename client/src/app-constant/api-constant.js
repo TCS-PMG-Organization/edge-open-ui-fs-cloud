@@ -73,7 +73,7 @@ const apiConstant = {
       //headerType: "OptionContentTypeJSONToken",
     },
     LOAD_BAR_DATA: {
-      url: `${baseURL}/call_get_processed_indicator_count_api`,
+      url: `${baseURL}/get_processed_indicator_count`,
       //url: `${testURL}/syncData`,
       type: "post",
       //headerType: "OptionContentTypeJSONToken",
@@ -101,7 +101,7 @@ const apiConstant = {
       //headerType: "OptionContentTypeJSONToken",
     },
     LOAD_DORMANT_BAR_DATA: {
-      url: `${baseURL}/call_get_dormant_processed_count_api`,
+      url: `${baseURL}/get_dormant_processed_count`,
       //url: `${testURL}/syncData`,
       type: "post",
       //headerType: "OptionContentTypeJSONToken",
@@ -129,7 +129,7 @@ const apiConstant = {
       //headerType: "OptionContentTypeJSONToken",
     },
     LOAD_CHEQUEBOOK_BAR_DATA: {
-      url: `${baseURL}/call_get_cheque_processed_count_api`,
+      url: `${baseURL}/get_cheque_processed_count`,
       //url: `${testURL}/syncData`,
       type: "post",
       //headerType: "OptionContentTypeJSONToken",
@@ -157,7 +157,7 @@ const apiConstant = {
       //headerType: "OptionContentTypeJSONToken",
     },
     LOAD_CREDIT_CARD_BAR_DATA: {
-      url: `${baseURL}/call_get_credit_processed_count_api`,
+      url: `${baseURL}/get_credit_processed_count`,
       //url: `${testURL}/syncData`,
       type: "post",
       //headerType: "OptionContentTypeJSONToken",
