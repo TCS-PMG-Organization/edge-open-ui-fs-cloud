@@ -44,7 +44,7 @@ pipeline {
       steps {
         echo 'Deploy application'
         script {
-          sh 'oc new-app  https://github.com/chongdershubhayu/openshift-python-sample.git#main --name edge-banking-pipeline'
+          sh 'oc new-app registry.access.redhat.com/ubi7/nodejs-14~https://github.com/chongdershubhayu/openshift-python-sample.git#main --name edge-banking-pipeline  --as-deployment-config'
         }
 
       }
@@ -54,7 +54,7 @@ pipeline {
         echo 'Expose Route'
         
         script {
-          sh 'oc expose deployment edge-banking-pipeline --type=LoadBalancer --name=edge-banking-pipeline-svc2 --port=3000'
+          sh 'oc expose dc edge-banking-pipeline --type=LoadBalancer --name=edge-banking-pipeline-svc2 --port=3000'
           sh 'oc expose svc edge-banking-pipeline-svc2'
         }
 
