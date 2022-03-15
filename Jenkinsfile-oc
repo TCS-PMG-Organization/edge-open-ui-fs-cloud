@@ -44,7 +44,7 @@ pipeline {
       steps {
         echo 'Deploy application'
         script {
-          sh 'oc new-app  registry.redhat.io/rhscl/nodejs-12-rhel7~https://github.com/chongdershubhayu/openshift-python-sample.git#main --name edge-banking-pipeline'
+          sh 'oc new-app  ubi8/nodejs-14~https://github.com/chongdershubhayu/openshift-python-sample.git#main --name edge-banking-pipeline'
         }
 
       }
