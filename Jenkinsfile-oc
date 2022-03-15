@@ -54,7 +54,7 @@ pipeline {
         echo 'Expose Route'
         
         script {
-          sh 'oc expose dc edge-banking-pipeline --type=LoadBalancer --name=edge-banking-pipeline-svc2 --port=3000'
+          sh 'oc expose dc edge-banking-pipeline --name=edge-banking-pipeline-svc2 --port=3000'
           sh 'oc expose svc edge-banking-pipeline-svc2'
         }
 
