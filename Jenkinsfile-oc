@@ -51,8 +51,8 @@ pipeline {
     }
     stage('Expose') {
       steps {
+        echo 'Expose Service'
         echo 'Expose Route'
-        
         script {
           sh 'oc expose dc edge-banking-pipeline --name=edge-banking-pipeline-svc2 --target-port=3000'
           sh 'oc expose svc edge-banking-pipeline-svc2'
